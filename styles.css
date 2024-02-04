@@ -22,12 +22,25 @@ h1 {
     padding: 10px;
     font-size: 48px;
     color: #F6E8EA;
+    text-shadow: 2px 2px #5A0001;
 }
 
 .button {
     text-decoration: none;
     color: #5A0001;
     font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0.2px 0.2px #F45B69;
+    margin: 10px;
+    padding: 2px;
+    border-radius: 8px;
+    border-color: #22181C;
+}
+
+.button:hover {
+    color: white;
+    background-color: #F13030;
+    text-shadow: 0.2px 0.2px #22181C;
 }
 
 #pika_wave {
@@ -36,4 +49,14 @@ h1 {
     border-radius: 16px;
     border-color: #22181C;
     border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
+}
+
+#bp_img {
+    width: 800px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
 }
