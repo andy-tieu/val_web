@@ -1,12 +1,39 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: 'Lexend Deca', sans-serif;
 }
 
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 body {
-    background-color: #F4ACB7;
+    background-color: #F45B69;
     text-align: center;
     color: #000000;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 48px;
+    color: #F6E8EA;
+}
+
+.button {
+    text-decoration: none;
+    color: #5A0001;
+    font-size: 16px;
+}
+
+#pika_wave {
+    width: 480px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
 }
