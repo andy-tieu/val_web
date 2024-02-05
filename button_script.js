@@ -1,23 +1,22 @@
-var myButton = document.getElementById("myButton");
-var xPos = "600px";
-var yPos = "400px";
-var x = 600;
-var y = 400;
+const button = document.getElementById("runaway-btn");
 
-var dx;
-var dy;
-console.log("hello");
+const animateMove = (element, prop, pixels) =>
+  anime({
+    targets: element,
+    [prop]: `${pixels}px`,
+    easing: "easeOutCirc"
+  });
 
-onmousemove = function(e) {
-	//console.log(e.clientX);
-	dx = x-e.clientX;
-	dy = y-e.clientY;
-	if(Math.sqrt(dx*dx + dy*dy) < 100) {
-		x += Math.random()*100 - 50;
-		y += Math.random()*100 - 50;
-		xPos = x.toString() + "px"; // 200px
-		yPos = y.toString() + "px";
-		myButton.style.left = xPos;
-		myButton.style.top = yPos;
-	}
-}
+["mouseover", "click"].forEach(function (el) {
+  button.addEventListener(el, function (event) {
+    const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+    const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+    animateMove(this, "left", left).play();
+    animateMove(this, "top", top).play();
+  });
+});
+
+const getRandomNumber = (num) => {
+  return Math.floor(Math.random() * (num + 1));
+};
