@@ -25,11 +25,13 @@ h1 {
     text-shadow: 2px 2px #5A0001;
 }
 
-#myButton {
-	
-	transition:top 0.5s ease, left 0.5s ease;
-	-webkit-transition:top 0.5s ease, left 0.5s ease;
-}
+#runaway-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
 
 .button {
     text-decoration: none;
@@ -37,6 +39,7 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     text-shadow: 0.2px 0.2px #F45B69;
+    box-shadow: 1px 1px 5px black;
     margin: 10px;
     padding: 2px;
     border-radius: 8px;
@@ -47,6 +50,7 @@ h1 {
     color: white;
     background-color: #F13030;
     text-shadow: 0.2px 0.2px #22181C;
+    cursor: pointer;
 }
 
 #pika_wave {
@@ -85,6 +89,15 @@ h1 {
     box-shadow: 5px 5px #5A0001;
 }
 
+#question {
+    width: 800px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
+}
+
 #drums {
     width: 500px;
     border-style: solid;
@@ -92,4 +105,12 @@ h1 {
     border-color: #22181C;
     border-width: 10px;
     box-shadow: 5px 5px #5A0001;
+}
+
+#cat {
+    width: 600px;
+}
+
+#end {
+    background-image: url(./images/valentines_background.png);
 }
