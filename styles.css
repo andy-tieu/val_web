@@ -60,3 +60,30 @@ h1 {
     border-width: 10px;
     box-shadow: 5px 5px #5A0001;
 }
+
+#anya {
+    width: 480px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
+}
+
+#haya {
+    width: 800px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
+}
+
+#drums {
+    width: 500px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
+}
