@@ -27,8 +27,8 @@ h1 {
 
 #runaway-btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 79.5%;
+    left: 52%;
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
@@ -100,6 +100,15 @@ h1 {
 
 #drums {
     width: 500px;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #22181C;
+    border-width: 10px;
+    box-shadow: 5px 5px #5A0001;
+}
+
+#mc {
+    width: 1000px;
     border-style: solid;
     border-radius: 16px;
     border-color: #22181C;
